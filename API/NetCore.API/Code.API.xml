@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Code.API</name>
+    </assembly>
+    <members>
+        <member name="M:Code.Controllers.BaseController`2.Add(`0)">
+            <summary>
+            This API call will create a record at the database.
+            </summary>
+            <param name="item">Model object to post</param>
+        </member>
+        <member name="M:Code.Controllers.BaseController`2.Get(System.Int32)">
+            <summary>
+            This API call will return a record from the database.
+            </summary>
+            <param name="id">1</param>
+        </member>
+        <member name="M:Code.Controllers.BaseController`2.Update(`0)">
+            <summary>
+            This API call will update a record at the database.
+            </summary>
+            <param name="item">Model object to post</param>
+        </member>
+        <member name="M:Code.Controllers.BaseController`2.Delete(System.Int32)">
+            <summary>
+            This API call will delete a record at the database.
+            </summary>
+            <param name="id">Record Id</param>
+        </member>
+        <member name="M:Code.API.Controllers.UserController.GetUsers(System.String,System.String)">
+             <summary>
+             The method will return the user list based on the OrderBy and SortBy details provided.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /User/LastName/asc
+            
+             </remarks>
+             <param name="orderBy">"FirstName" or "LastName"</param>
+             <param name="sortBy">"asc" or "desc"</param>
+             <returns></returns>
+        </member>
+    </members>
+</doc>
